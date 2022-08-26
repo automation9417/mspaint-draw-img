@@ -5,9 +5,9 @@ from clicknium import clicknium as cc, locator, ui
 import os
 
 # Set original picture path
-sourceImgPath = r'C:\test\1.png'
+sourceImgPath = r'.\img\google_logo.png'
 # Set the path to save the picture
-savePath = r'C:\test\4.png'
+savePath = r'.\img\google_logo_pixel.png'
 
 
 clientRectX = 0
@@ -83,7 +83,7 @@ def main():
     # Draw point on mspaint
     draw(dict_x_y,dict_y_x)
 
-    # save_file(savePath)
+    save_file(savePath)
     print('end')
 
 def resize_img(sourceImgPath,resizeSavePath):
